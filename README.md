@@ -6,7 +6,7 @@ A drawing program for Windows - a bit more than plain Paint: layers, selections,
 
 **[Download the latest version](https://github.com/cyz-yt/OrkaPaint/releases/latest)** · [Website](https://cyzs-retroweb.rf.gd/orkapaint.php)
 
-Current version: **1.0 "Azurite"**
+Current version: **1.0.1 "Azurite"**
 
 ## What it does
 
@@ -28,8 +28,8 @@ Current version: **1.0 "Azurite"**
 - Several pictures at once, in tabs.
 - History: click any step to go back to it.
 - Floating panels (Tools, Colours, History, Layers) you can move, hide and bring back with F5-F8.
-- Light, dark or like Windows.
-- Windows in 8 languages: English, Polish, German, Spanish, French, Italian, Portuguese and Ukrainian - Windows language by default. Yours is missing? Settings > Make your own language.
+- Light or dark (the same as Windows at first), plus a classic look with square corners like Windows 10.
+- Windows in 8 languages: English, Polish, German, Spanish, French, Italian, Portuguese and Ukrainian - Windows language by default. Yours is missing? Settings > Language editor.
 - "Open in OrkaPaint" in the Explorer menu for pictures (an option in Settings).
 - A short tutorial on the first run and a tip on every run after.
 - Portable mode: put an empty `portable.txt` next to `OrkaPaint.exe` and the settings and log stay next to it.
@@ -42,12 +42,12 @@ Opens PNG, JPG, BMP, GIF, TIFF, ICO and `.ora`. Saves PNG, JPG, BMP and `.ora`.
 |---|---|
 | ![Dark theme](screenshots/dark.png) | ![Text](screenshots/text.png) |
 | The dark theme | Typing text straight onto the picture |
-| ![Settings](screenshots/settings.png) | |
-| Settings | |
+| ![Settings](screenshots/settings.png) | ![Classic look](screenshots/classic.png) |
+| Settings with tabs at the top | The classic look (1.0.1) |
 
 ## Installing
 
-1. Download `OrkaPaint-1.0-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaPaint/releases/latest).
+1. Download `OrkaPaint-1.0.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaPaint/releases/latest).
 2. Run it. Windows may show "Windows protected your PC", because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. **Express** installs everything. **Custom** lets you leave out window languages.
 
@@ -56,7 +56,7 @@ Opens PNG, JPG, BMP, GIF, TIFF, ICO and `.ora`. Saves PNG, JPG, BMP and `.ora`.
 **Quiet install** (for scripts):
 
 ```
-OrkaPaint-1.0-setup.exe /SILENT /CURRENTUSER /openwith=yes /contextmenu=no /updates=yes /theme=system
+OrkaPaint-1.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /contextmenu=no /updates=yes /theme=system
 ```
 
 `/openwith=no` leaves file associations alone, `/contextmenu=yes` adds "Open in OrkaPaint" to the Explorer menu, `/updates=no` turns off the update check, `/theme=light` or `/theme=dark` picks the theme, and `/ALLUSERS` installs for everyone.
@@ -86,6 +86,14 @@ OrkaPaint-1.0-setup.exe /SILENT /CURRENTUSER /openwith=yes /contextmenu=no /upda
 - **Problem reports:** sent only when you click **Send Report**. You see every line first, and there are no pictures, file names, folders or your Windows user name in it. *Settings*
 
 Something wrong? Help > Show Log opens the log, and the [diagnostics page](https://cyzs-retroweb.rf.gd/orkapaint-diagnostyka.php) reads it in your browser.
+
+## Changes in 1.0.1 "Azurite"
+
+- Settings with tabs at the top, like in OrkaPlayer.
+- A classic Windows 10 look: square corners and Windows 10 colours.
+- Light or dark, the same as Windows at first.
+- A language editor in Settings. The Polish is written from scratch.
+- The Explorer menu and file type names in the program's language, and a new "Up to Date" window.
 
 ## Built with
 
