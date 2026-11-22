@@ -6,7 +6,7 @@ A drawing program for Windows - a bit more than plain Paint: layers, selections,
 
 **[Download the latest version](https://github.com/cyz-yt/OrkaPaint/releases/latest)** · [Website](https://cyzs-retroweb.rf.gd/orkapaint.php)
 
-Current version: **1.0.1 "Azurite"**
+Current version: **1.0.2 "Azurite"**
 
 ## What it does
 
@@ -47,7 +47,7 @@ Opens PNG, JPG, BMP, GIF, TIFF, ICO and `.ora`. Saves PNG, JPG, BMP and `.ora`.
 
 ## Installing
 
-1. Download `OrkaPaint-1.0.1-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaPaint/releases/latest).
+1. Download `OrkaPaint-1.0.2-setup.exe` from [Releases](https://github.com/cyz-yt/OrkaPaint/releases/latest).
 2. Run it. Windows may show "Windows protected your PC", because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. **Express** installs everything. **Custom** lets you leave out window languages.
 
@@ -56,10 +56,12 @@ Opens PNG, JPG, BMP, GIF, TIFF, ICO and `.ora`. Saves PNG, JPG, BMP and `.ora`.
 **Quiet install** (for scripts):
 
 ```
-OrkaPaint-1.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /contextmenu=no /updates=yes /theme=system
+OrkaPaint-1.0.2-setup.exe /SILENT /CURRENTUSER /openwith=yes /contextmenu=no /updates=yes /theme=system
 ```
 
 `/openwith=no` leaves file associations alone, `/contextmenu=yes` adds "Open in OrkaPaint" to the Explorer menu, `/updates=no` turns off the update check, `/theme=light` or `/theme=dark` picks the theme, and `/ALLUSERS` installs for everyone.
+
+Without these switches, an update keeps what is set now.
 
 ## Keyboard
 
@@ -86,6 +88,15 @@ OrkaPaint-1.0.1-setup.exe /SILENT /CURRENTUSER /openwith=yes /contextmenu=no /up
 - **Problem reports:** sent only when you click **Send Report**. You see every line first, and there are no pictures, file names, folders or your Windows user name in it. *Settings*
 
 Something wrong? Help > Show Log opens the log, and the [diagnostics page](https://cyzs-retroweb.rf.gd/orkapaint-diagnostyka.php) reads it in your browser.
+
+## Changes in 1.0.2 "Azurite"
+
+Bug fixes. I am very sorry for putting out such faulty updates - 1.0.1 should not have gone out with these bugs.
+
+- Zooming far into a big picture no longer closes OrkaPaint. The largest zoom depends on the picture size.
+- Language Editor: a new Delete button.
+- Settings > Updates and Reports: the two buttons stand in one line.
+- Setup keeps your options on an update.
 
 ## Changes in 1.0.1 "Azurite"
 
